@@ -697,9 +697,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 1848620633}
-  velocity: {x: 35, y: 0}
+  friction: {x: -0.1, y: 0}
   speed: 10
   forceJump: 10
+  speedRun: 40
 --- !u!1 &2004317857
 GameObject:
   m_ObjectHideFlags: 0
