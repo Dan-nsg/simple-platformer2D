@@ -719,6 +719,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007466312498025151, guid: 00afc9fb4087652419d090da0b825d97, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1060,13 +1072,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   friction: {x: -0.3, y: 0}
-  speed: 5
-  speedRun: 10
-  forceJump: 10
+  speed: 10
+  speedRun: 21
+  forceJump: 15
   myRigidbody: {fileID: 1848620633}
-  jumpScaleY: 2
-  jumpScaleX: 2
-  animationDuration: 1
+  jumpScaleY: 1.5
+  jumpScaleX: 0.7
+  animationDuration: 0.3
   animator: {fileID: 2065221507}
 --- !u!114 &1848620635
 MonoBehaviour:
@@ -1082,7 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startLife: 10
   destroyOnKill: 1
-  delayToKill: 0
+  delayToKill: 1
 --- !u!1 &1914993350
 GameObject:
   m_ObjectHideFlags: 0
