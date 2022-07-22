@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     public float jumpScaleX = 0.7f;
     public float animationDuration = .3f;
 
+    [Header("Player Animation")]
+    private string boolRun = "Run";
+    public Animator animator;
+
     private void Update() 
     {
         HandleJump();
@@ -28,20 +32,33 @@ public class Player : MonoBehaviour
     private void HandleMovement()
     {
         if(Input.GetKey(KeyCode.LeftShift))
+        {
             _currentSpeed = speedRun;
+            animator.speed = 2;
+        }
         else 
+        {
              _currentSpeed = speed;
-
+             animator.speed = 1;
+        }
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             //myRigidbody.MovePosition(myRigidbody.position - velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(-_currentSpeed, myRigidbody.velocity.y);
+            myRigidbody.transform.localScale = new Vector3(-1, 1, 1);
+            animator.SetBool(boolRun, true);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(_currentSpeed, myRigidbody.velocity.y);
+            myRigidbody.transform.localScale = new Vector3(1, 1, 1);
+            animator.SetBool(boolRun, true);
+        }
+        else 
+        {
+            animator.SetBool(boolRun, false);
         }
 
         if(myRigidbody.velocity.x > 0)
