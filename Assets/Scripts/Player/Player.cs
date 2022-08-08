@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     public float speedRun;
     public float forceJump = 2;
     public Rigidbody2D myRigidbody;
-    private float _currentSpeed;
 
     [Header("Animation Setup")]
     public float jumpScaleY = 1.5f;
@@ -22,7 +21,11 @@ public class Player : MonoBehaviour
     [Header("Player Animation")]
     private string boolRun = "Run";
     public Animator animator;
+    public float playerSwipeDuration = .1f;
 
+    private float _currentSpeed;
+    private bool _isRunning = false;
+   
     private void Update() 
     {
         HandleJump();
@@ -44,16 +47,20 @@ public class Player : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
-            //myRigidbody.MovePosition(myRigidbody.position - velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(-_currentSpeed, myRigidbody.velocity.y);
-            myRigidbody.transform.localScale = new Vector3(-1, 1, 1);
+            if(myRigidbody.transform.localScale.x != -1)
+            {
+                myRigidbody.transform.DOScaleX(-1, playerSwipeDuration);
+            }
             animator.SetBool(boolRun, true);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(_currentSpeed, myRigidbody.velocity.y);
-            myRigidbody.transform.localScale = new Vector3(1, 1, 1);
+            if(myRigidbody.transform.localScale.x != 1)
+            {
+                myRigidbody.transform.DOScaleX(1, playerSwipeDuration);
+            }
             animator.SetBool(boolRun, true);
         }
         else 
