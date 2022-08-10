@@ -5,11 +5,8 @@ using UnityEngine;
 public class ProjectileBase : MonoBehaviour
 {
     public Vector3 direction;
-
     public float timeToDestroy = 2f;
-
     public float side = 1;
-
     public int damageAmount = 1;
 
     private void Awake() 
@@ -28,6 +25,7 @@ public class ProjectileBase : MonoBehaviour
         if(enemy != null)
         {
             enemy.Damage(damageAmount);
+            Destroy(gameObject);
         }
     }
 }

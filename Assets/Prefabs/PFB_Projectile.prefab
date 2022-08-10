@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
+  timeToDestroy: 2
+  side: 1
+  damageAmount: 1
 --- !u!58 &6150897761340812798
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62,7 +65,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!1 &2882888391623174207
 GameObject:
   m_ObjectHideFlags: 0
