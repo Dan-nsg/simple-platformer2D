@@ -51,9 +51,13 @@ public class Player : MonoBehaviour
     private void HandleMovement()
     {
         if(Input.GetKey(KeyCode.LeftShift))
+        {
             _currentSpeed = speedRun;
-        else 
+        }
+        else
+        {
              _currentSpeed = speed;
+        } 
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
@@ -91,12 +95,14 @@ public class Player : MonoBehaviour
     private void HandleJump()
     {
         if(Input.GetKeyDown(KeyCode.Space))
+        {
             myRigidbody.velocity = Vector2.up * forceJump;
             myRigidbody.transform.localScale = Vector2.one;
 
             DOTween.Kill(myRigidbody.transform);
 
             HandleScaleJump();
+        }
     }
 
     private void HandleScaleJump()

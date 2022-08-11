@@ -13,7 +13,7 @@ public class GunBase : MonoBehaviour
 
     private void Update() 
     {
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.S))
         {
             _currentCoroutine = StartCoroutine(StartShoot());
         }

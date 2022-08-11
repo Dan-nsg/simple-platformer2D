@@ -7,6 +7,7 @@ public class ProjectileBase : MonoBehaviour
     public Vector3 direction;
     public float timeToDestroy = 2f;
     public float side = 1;
+    public float speed = 1;
     public int damageAmount = 1;
 
     private void Awake() 
@@ -16,7 +17,7 @@ public class ProjectileBase : MonoBehaviour
 
     private void Update() 
     {
-        transform.Translate(direction * Time.deltaTime * side);
+        transform.Translate(Vector3.right * Time.deltaTime * side * speed);
     }
     
     private void OnCollisionEnter2D(Collision2D collision) 

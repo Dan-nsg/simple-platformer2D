@@ -49,6 +49,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   timeToDestroy: 2
   side: 1
+  speed: 30
   damageAmount: 1
 --- !u!58 &6150897761340812798
 CircleCollider2D:
