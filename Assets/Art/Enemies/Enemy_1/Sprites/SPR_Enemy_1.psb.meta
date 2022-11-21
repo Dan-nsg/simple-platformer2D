@@ -21,6 +21,8 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
@@ -47,6 +49,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -87,8 +90,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Left_Eyebrow
@@ -163,8 +166,8 @@ ScriptedImporter:
     - {x: 1, y: 2}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 55, y: 227}
+    uvTransform: {x: 216, y: 682}
+    spritePosition: {x: 161, y: 455}
   - name: Right_Eyebrow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -237,8 +240,8 @@ ScriptedImporter:
     - {x: 2, y: 3}
     - {x: 0, y: 1}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -159, y: 233}
+    uvTransform: {x: 112, y: 682}
+    spritePosition: {x: 271, y: 449}
   - name: Left_Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -311,8 +314,8 @@ ScriptedImporter:
     - {x: 1, y: 2}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 291, y: 260}
+    uvTransform: {x: 441, y: 682}
+    spritePosition: {x: 150, y: 422}
   - name: Right_Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -385,8 +388,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     - {x: 1, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 20, y: 270}
+    uvTransform: {x: 286, y: 682}
+    spritePosition: {x: 266, y: 412}
   - name: Right_Eye_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -459,8 +462,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     - {x: 2, y: 3}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 83, y: 295}
+    uvTransform: {x: 386, y: 682}
+    spritePosition: {x: 303, y: 387}
   - name: Left_Eye_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -533,8 +536,8 @@ ScriptedImporter:
     - {x: 2, y: 3}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 353, y: 283}
+    uvTransform: {x: 508, y: 682}
+    spritePosition: {x: 155, y: 399}
   - name: Mouth
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -607,8 +610,8 @@ ScriptedImporter:
     - {x: 1, y: 2}
     - {x: 0, y: 1}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -162, y: 369}
+    uvTransform: {x: 4, y: 682}
+    spritePosition: {x: 166, y: 313}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1180,8 +1183,8 @@ ScriptedImporter:
     - {x: 28, y: 48}
     - {x: 29, y: 48}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
   characterData:
     bones:
     - name: Hips
@@ -1322,6 +1325,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -1329,6 +1333,7 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
@@ -1341,6 +1346,7 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   skeletonAssetReferenceID: 
+  padding: 4
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -1479,6 +1485,7 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
   generateGOHierarchy: 0
   textureAssetName: SPR_Enemy_1 Texture
   prefabAssetName: SPR_Enemy_1 Prefab

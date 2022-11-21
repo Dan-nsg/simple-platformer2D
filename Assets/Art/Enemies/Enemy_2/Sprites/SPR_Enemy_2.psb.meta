@@ -21,6 +21,8 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
@@ -47,6 +49,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -87,8 +90,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Right_Eyebrow
@@ -163,8 +166,8 @@ ScriptedImporter:
     - {x: 0, y: 1}
     - {x: 2, y: 3}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 77, y: 233}
+    uvTransform: {x: 367, y: 682}
+    spritePosition: {x: 290, y: 449}
   - name: Left_Eyebrow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -237,8 +240,8 @@ ScriptedImporter:
     - {x: 2, y: 1}
     - {x: 0, y: 3}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 305, y: 227}
+    uvTransform: {x: 471, y: 682}
+    spritePosition: {x: 166, y: 455}
   - name: Right Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -311,8 +314,8 @@ ScriptedImporter:
     - {x: 3, y: 0}
     - {x: 0, y: 1}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -85, y: 324}
+    uvTransform: {x: 191, y: 736}
+    spritePosition: {x: 276, y: 412}
   - name: Left Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -385,8 +388,8 @@ ScriptedImporter:
     - {x: 0, y: 3}
     - {x: 1, y: 2}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 131, y: 314}
+    uvTransform: {x: 291, y: 736}
+    spritePosition: {x: 160, y: 422}
   - name: Right Eye_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -459,8 +462,8 @@ ScriptedImporter:
     - {x: 1, y: 0}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -304, y: 419}
+    uvTransform: {x: 4, y: 806}
+    spritePosition: {x: 308, y: 387}
   - name: Left_Eye
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -533,8 +536,8 @@ ScriptedImporter:
     - {x: 0, y: 1}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 381, y: 283}
+    uvTransform: {x: 541, y: 682}
+    spritePosition: {x: 160, y: 399}
   - name: Mouth_Open
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -607,8 +610,8 @@ ScriptedImporter:
     - {x: 2, y: 3}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -163, y: 406}
+    uvTransform: {x: 4, y: 682}
+    spritePosition: {x: 167, y: 276}
   - name: Mouth_closed
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -681,8 +684,8 @@ ScriptedImporter:
     - {x: 1, y: 2}
     - {x: 3, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 24, y: 336}
+    uvTransform: {x: 191, y: 682}
+    spritePosition: {x: 167, y: 346}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1274,8 +1277,8 @@ ScriptedImporter:
     - {x: 36, y: 47}
     - {x: 35, y: 47}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
   characterData:
     bones:
     - name: Hips
@@ -1425,6 +1428,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -1432,6 +1436,7 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
@@ -1444,6 +1449,7 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   skeletonAssetReferenceID: 
+  padding: 4
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -1592,6 +1598,7 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
   generateGOHierarchy: 0
   textureAssetName: SPR_Enemy_2 Texture
   prefabAssetName: SPR_Enemy_2 Prefab
