@@ -25,8 +25,8 @@ public class ItemCollectableBase : MonoBehaviour
     protected virtual void Collect() 
     {
         if(graphicItem != null) graphicItem.SetActive(false);
-        Invoke("HideObject", timeToHide);
         OnCollect();
+        HideObject();
     }
 
     private void HideObject()
@@ -36,7 +36,9 @@ public class ItemCollectableBase : MonoBehaviour
 
     protected virtual void OnCollect() 
     { 
-
+        coinParticleSystem.Play();
+        coinParticleSystem.transform.parent = null;
+        Destroy(coinParticleSystem.gameObject, 2f);
     }
 
 
