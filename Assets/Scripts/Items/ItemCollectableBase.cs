@@ -10,6 +10,9 @@ public class ItemCollectableBase : MonoBehaviour
     public float timeToHide = 1;
     public GameObject graphicItem;
 
+    [Header("Sounds")]
+    public AudioSource audioSource;
+
     private void Awake() 
     {
         if(coinParticleSystem != null) coinParticleSystem.transform.SetParent(null);
@@ -37,6 +40,7 @@ public class ItemCollectableBase : MonoBehaviour
     protected virtual void OnCollect() 
     { 
         coinParticleSystem.Play();
+        if(audioSource != null) audioSource.Play();
         coinParticleSystem.transform.parent = null;
         Destroy(coinParticleSystem.gameObject, 2f);
     }

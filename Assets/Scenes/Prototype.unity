@@ -243,6 +243,7 @@ MonoBehaviour:
   coinParticleSystem: {fileID: 0}
   timeToHide: 3
   graphicItem: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &93737855
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +410,7 @@ MonoBehaviour:
   coinParticleSystem: {fileID: 0}
   timeToHide: 3
   graphicItem: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &122048379
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8147,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
+--- !u!82 &1360652983 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8343813382162229283, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
+  m_PrefabInstance: {fileID: 6369929477984472492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1366945829
 GameObject:
   m_ObjectHideFlags: 0
@@ -16648,6 +16655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 6369929478160823278, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1360652983}
     - target: {fileID: 6369929478160823279, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16691,6 +16702,14 @@ PrefabInstance:
     - target: {fileID: 6369929478160823279, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343813382162229283, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343813382162229283, guid: 3415d18193ab69f40a69e19cbe24f9a2, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
