@@ -6,7 +6,7 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot - Copy
+  m_Name: Menu
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 33f39e67e4ba5e543989aadaf2d0947a
   m_FloatValues:
@@ -63,7 +63,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: c6c6f982cce643245b8668923de7fbd9
+    name: VolumeAmbience
+  - guid: bf02336be3925634b8c198e2f5c98d91
+    name: VolumeMaster
+  - guid: 357b02b4b478cdb4dac21f1b5c589305
+    name: VolumeSFX
   m_AudioMixerGroupViews:
   - guids:
     - fe4f9bd4b37c563439eefe94ee0bd159
@@ -71,7 +77,7 @@ AudioMixerController:
     - ea5a4137c2b05854781444a2f4c59efc
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: -7658120052059776394}
+  m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -82,8 +88,8 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: fe4f9bd4b37c563439eefe94ee0bd159
   m_Children:
-  - {fileID: -4068865718173334790}
   - {fileID: 1311781531005219315}
+  - {fileID: -4068865718173334790}
   m_Volume: bf02336be3925634b8c198e2f5c98d91
   m_Pitch: d3bfe258f8493d047852dd6e3a7fa297
   m_Send: 00000000000000000000000000000000
@@ -113,12 +119,13 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: Ingame
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 2a45a2ae041a24f44b7c1695e98cd276
   m_FloatValues:
-    c6c6f982cce643245b8668923de7fbd9: -8.841784
-    357b02b4b478cdb4dac21f1b5c589305: -11.062239
+    c6c6f982cce643245b8668923de7fbd9: -0.025776558
+    357b02b4b478cdb4dac21f1b5c589305: 0
+    bf02336be3925634b8c198e2f5c98d91: -3.8468575
     82d5eb3db5be76846946031acfe1fa84: 1
   m_TransitionOverrides: {}
 --- !u!243 &1311781531005219315

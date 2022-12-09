@@ -23,6 +23,9 @@ public class Player : MonoBehaviour
     public float spaceToGround = .1f;
     public ParticleSystem jumpVFX;
 
+    [Header("Player Sounds")]
+    public AudioSource jumpSFX;
+
     private void Awake() 
     {
         if(healthBase != null) {
@@ -111,12 +114,18 @@ public class Player : MonoBehaviour
 
             HandleScaleJump();
             PlayJumpVFX();
+            JumpSFX();
         }
     }
 
     private void PlayJumpVFX() 
     {
         if(jumpVFX != null) jumpVFX.Play();
+    }
+
+    private void JumpSFX()
+    {
+        if(jumpSFX != null) jumpSFX.Play();
     }
 
     private void HandleScaleJump()
